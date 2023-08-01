@@ -1,6 +1,6 @@
 ---
+import "../styles/global.css";
 import Header from "../components/Header.astro";
-import ImageCarousel from '../components/ImageCarousel';
 import Navigation from '../components/Navigation';
 import Layout from '../layouts/Layout.astro';
 ---
@@ -8,11 +8,27 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="SignDesignNYC | Home">
   <main class="h-screen flex flex-col">
     <Header />
-    <section class="grow flex">
+    <section class="relative grow flex overflow-y-auto">
       <Navigation client:load />
-      <div class="grow bg-zinc-800 px-8 py-4">
-        <h1 class="text-5xl font-bold text-white">HOME</h1>
-        <ImageCarousel client:load />
+      <div class="grow bg-zinc-800">
+        <section id="awnings" class="px-8 py-4 bg-red-500 h-full flex justify-center items-center">
+          <h1 class="text-8xl font-extrabold text-black/25 uppercase">Awnings</h1>
+        </section>
+        <section id="neon" class="px-8 py-4 bg-orange-500 h-full flex justify-center items-center">
+          <h1 class="text-8xl font-extrabold text-black/25 uppercase">Neon</h1>
+        </section>
+        <section id="channel-letters" class="px-8 py-4 bg-yellow-500 h-full flex justify-center items-center">
+          <h1 class="text-8xl font-extrabold text-black/25 uppercase">Channel Letters</h1>
+        </section>
+        <section id="pvc" class="px-8 py-4 bg-green-500 h-full flex justify-center items-center">
+          <h1 class="text-8xl font-extrabold text-black/25 uppercase">PVC</h1>
+        </section>
+        <section id="truck-stickers" class="px-8 py-4 bg-blue-500 h-full flex justify-center items-center">
+          <h1 class="text-8xl font-extrabold text-black/25 uppercase">Truck Stickers</h1>
+        </section>
+        <section id="stickers" class="px-8 py-4 bg-purple-500 h-full flex justify-center items-center">
+          <h1 class="text-8xl font-extrabold text-black/25 uppercase">Stickers</h1>
+        </section>
       </div>
     </section>
   </main>
