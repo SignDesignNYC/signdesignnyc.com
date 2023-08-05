@@ -1,0 +1,25 @@
+---
+import "../styles/global.css"
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="SignDesignNYC | Mobile">
+  <main class="h-screen flex flex-col bg-zinc-800">
+    <!-- Navbar -->
+    <nav class="p-4 w-full flex flex-col gap-6 place-items-center">
+      <!-- Logo -->
+      <a href="/">
+        <img src="signdesignnyc-logo-dark.svg" class="w-[32rem]">
+      </a>
+    </nav>
+    <!-- Call to Action -->
+    <section class="grow p-4 flex flex-col gap-6">
+      <h1 class="font-bold text-zinc-100 text-3xl">
+        Custom Vinyl Stickers, Awnings, Neon Signs, PVC, and more!
+      </h1>
+      <button class="rounded-full p-4 bg-gradient-to-r from-yellow-400 via-lime-400 via-70% to-green-400">
+        <span class="font-bold text-zinc-800 text-xl">Learn More</span>
+      </button>
+    </section>
+  </main>
+</Layout>
