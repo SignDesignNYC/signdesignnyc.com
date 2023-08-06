@@ -1,25 +1,108 @@
 ---
 import "../styles/global.css"
 import Layout from "../layouts/Layout.astro";
+import { MailIcon, FacebookIcon, InstagramIcon } from "../components/icons";
 ---
 
 <Layout title="SignDesignNYC | Mobile">
-  <main class="h-screen flex flex-col bg-zinc-800">
+  <main class="grid bg-zinc-800">
     <!-- Navbar -->
-    <nav class="p-4 w-full flex flex-col gap-6 place-items-center">
+    <nav class="mt-4 px-4 w-full grid place-items-center">
       <!-- Logo -->
-      <a href="/">
-        <img src="signdesignnyc-logo-dark.svg" class="w-[32rem]">
+      <a href="/" class="max-w-sm">
+        <img
+          src="signdesignnyc-logo-dark.svg"
+          alt="SignDesignNYC Logo Dark"
+          class="w-fit"
+        >
       </a>
     </nav>
     <!-- Call to Action -->
-    <section class="grow p-4 flex flex-col gap-6">
-      <h1 class="font-bold text-zinc-100 text-3xl">
-        Custom Vinyl Stickers, Awnings, Neon Signs, PVC, and more!
-      </h1>
-      <button class="rounded-full p-4 bg-gradient-to-r from-yellow-400 via-lime-400 via-70% to-green-400">
-        <span class="font-bold text-zinc-800 text-xl">Learn More</span>
-      </button>
+    <section class="mt-8 px-4 w-full grid">
+      <div class="place-self-center grid gap-6 w-full max-w-sm">
+        <h1 class="font-bold text-zinc-100 text-3xl">
+          Custom Vinyl Stickers, Awnings, Neon Signs, PVC, and more!
+        </h1>
+        <a
+          href="mailto:signdesignnyc@gmail.com"
+          target="_blank"
+          class="grid place-items-center rounded-full p-2 bg-yellow-400 hover:cursor-pointer"
+        >
+          <span class="font-bold text-zinc-800 text-xl">Contact for Pricing</span>
+        </a>
+      </div>
     </section>
+    <!-- Product Showcase -->
+    <section class="mt-8 px-4 w-full grid">
+      <div class="place-self-center grid gap-6 w-full max-w-sm">
+        <!-- Awning -->
+        <div class="grid gap-4">
+          <h1 class="font-bold text-zinc-100 text-2xl">
+            Awnings
+          </h1>
+          <div class="grid gap-4">
+            <img
+              src="awnings/2011-fabric-awning-cornercafe.jpg"
+              alt="2011 Fabric Awning - Corner Cafe & Grill"
+              class="rounded-lg"
+            >
+            <img
+              src="awnings/2012-fabric-awning-hrblock.jpg"
+              alt="2012 Fabric Awning - H&R Block"
+              class="rounded-lg"
+            >
+            <img
+              src="awnings/2012-fabric-awning-zerza.jpg"
+              alt="2012 Fabric Awning - Zerza Mediterranean"
+              class="rounded-lg"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="mt-12 px-4 w-full bg-zinc-900">
+      <div class="my-8 max-w-sm m-auto flex flex-col gap-4">
+        <!-- Logo -->
+        <a href="/" class="max-w-xs">
+          <img src="signdesignnyc-logo-dark.svg" alt="SignDesignNYC Logo Dark" class="w-fit">
+        </a>
+        <!-- Social Links -->
+        <div class="flex -translate-x-2">
+          <a
+            href="mailto:signdesignnyc@gmail.com"
+            target="_blank"
+            title="Email"
+            class="group p-2"
+          >
+            <MailIcon
+              className="w-8 h-8 text-zinc-100 group-hover:text-yellow-300 transition-all duration-150 ease-in-out"
+            />
+          </a>
+          <a
+            href=""
+            title="Facebook"
+            class="group p-2"
+          >
+            <FacebookIcon
+              className="w-8 h-8 text-zinc-100 group-hover:text-yellow-300 transition-all duration-150 ease-in-out"
+            />
+          </a>
+          <a
+            href=""
+            title="Instagram"
+            class="group p-2"
+          >
+            <InstagramIcon
+              className="w-8 h-8 text-zinc-100 group-hover:text-yellow-300 transition-all duration-150 ease-in-out"
+            />
+          </a>
+        </div>
+        <!-- Copyright -->
+        <span class="mt-20 text-zinc-500 text-sm">
+          &copy; 2023 SignDesignNYC, All Rights Reserved
+        </span>
+      </div>
+    </footer>
   </main>
 </Layout>
