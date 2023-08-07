@@ -2,7 +2,7 @@ import type React from "react";
 
 export default function Navbar(): React.ReactNode {
   return (
-    <nav className="sticky top-0 bg-zinc-800 p-4 w-full grid gap-4 place-items-center">
+    <nav className="bg-zinc-800 p-4 w-full grid gap-4 place-items-center">
       <a href="/" className="max-w-sm">
         <img
           src="signdesignnyc-logo-dark.svg"
@@ -10,12 +10,13 @@ export default function Navbar(): React.ReactNode {
           className="w-fit"
         />
       </a>
-      <ul className="flex gap-4 flex-wrap justify-center">
+      <ul className="grid grid-cols-2 sm:flex gap-4 flex-wrap justify-center">
         <NavLink href="#awning">Awning</NavLink>
         <NavLink href="#neon">Neon</NavLink>
         <NavLink href="#channel-letters">Channel Letters</NavLink>
         <NavLink href="#pvc">PVC</NavLink>
         <NavLink href="#stickers">Vinyl Stickers</NavLink>
+        <NavLink href="#contact">Contact</NavLink>
       </ul>
     </nav>
   );
@@ -29,7 +30,7 @@ function NavLink({
   children?: React.ReactNode;
 }): React.ReactNode {
   return (
-    <a href={href}>
+    <a href={href} className="text-center">
       <NavListItem>
         {children}
       </NavListItem>
