@@ -7,7 +7,7 @@ import { MailIcon, FacebookIcon, InstagramIcon } from "../components/icons";
 <Layout title="SignDesignNYC | Mobile">
   <main class="grid bg-zinc-800">
     <!-- Navbar -->
-    <nav class="mt-4 px-4 w-full grid place-items-center">
+    <nav class="sticky top-0 bg-zinc-800 p-4 w-full grid gap-4 place-items-center">
       <!-- Logo -->
       <a href="/" class="max-w-sm">
         <img
@@ -16,6 +16,43 @@ import { MailIcon, FacebookIcon, InstagramIcon } from "../components/icons";
           class="w-fit"
         >
       </a>
+      <ul class="flex gap-4 flex-wrap justify-center">
+        <a href="#awning">
+          <li>
+            <span class="text-xl font-bold text-zinc-200 hover:text-yellow-300 transition-all duration-150 ease-in-out">
+              Awning
+            </span>
+          </li>
+        </a>
+        <a href="#neon">
+          <li>
+            <span class="text-xl font-bold text-zinc-200 hover:text-yellow-300 transition-all duration-150 ease-in-out">
+              Neon
+            </span>
+          </li>
+        </a>
+        <a href="#channel-letters">
+          <li>
+            <span class="text-xl font-bold text-zinc-200 hover:text-yellow-300 transition-all duration-150 ease-in-out">
+              Channel Letters
+            </span>
+          </li>
+        </a>
+        <a href="#pvc">
+          <li>
+            <span class="text-xl font-bold text-zinc-200 hover:text-yellow-300 transition-all duration-150 ease-in-out">
+              PVC
+            </span>
+          </li>
+        </a>
+        <a href="#stickers">
+          <li>
+            <span class="text-xl font-bold text-zinc-200 hover:text-yellow-300 transition-all duration-150 ease-in-out">
+              Stickers
+            </span>
+          </li>
+        </a>
+      </ul>
     </nav>
     <!-- Call to Action -->
     <section class="mt-8 px-4 w-full grid">
@@ -36,9 +73,9 @@ import { MailIcon, FacebookIcon, InstagramIcon } from "../components/icons";
     <section class="mt-8 px-4 w-full grid">
       <div class="place-self-center grid gap-6 w-full max-w-sm">
         <!-- Awning -->
-        <div class="grid gap-4">
+        <div id="awning" class="grid gap-4">
           <h1 class="font-bold text-zinc-100 text-3xl">
-            Awnings
+            Awning
           </h1>
           <div class="grid gap-4">
             <img
@@ -59,9 +96,9 @@ import { MailIcon, FacebookIcon, InstagramIcon } from "../components/icons";
           </div>
         </div>
         <!-- Neon -->
-        <div class="grid gap-4">
+        <div id="neon" class="grid gap-4">
           <h1 class="font-bold text-zinc-100 text-3xl">
-            Neons
+            Neon
           </h1>
           <div class="grid gap-4">
             <img
@@ -87,7 +124,7 @@ import { MailIcon, FacebookIcon, InstagramIcon } from "../components/icons";
           </div>
         </div>
         <!-- Channel Letters -->
-        <div class="grid gap-4">
+        <div id="channel-letters" class="grid gap-4">
           <h1 class="font-bold text-zinc-100 text-3xl">
             Channel Letters
           </h1>
@@ -115,7 +152,7 @@ import { MailIcon, FacebookIcon, InstagramIcon } from "../components/icons";
           </div>
         </div>
         <!-- PVC -->
-        <div class="grid gap-4">
+        <div id="pvc" class="grid gap-4">
           <h1 class="font-bold text-zinc-100 text-3xl">
             PVC
           </h1>
@@ -143,7 +180,7 @@ import { MailIcon, FacebookIcon, InstagramIcon } from "../components/icons";
           </div>
         </div>
         <!-- Stickers -->
-        <div class="grid gap-4">
+        <div id="stickers" class="grid gap-4">
           <h1 class="font-bold text-zinc-100 text-3xl">
             Vinyl Stickers
           </h1>
