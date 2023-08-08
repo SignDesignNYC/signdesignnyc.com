@@ -2,15 +2,16 @@ import type React from "react";
 
 export default function Navbar(): React.ReactNode {
   return (
-    <nav className="bg-zinc-800 p-4 w-full grid gap-4 place-items-center">
-      <a href="/" className="max-w-sm sm:max-w-lg">
+    <nav className="bg-zinc-800 p-4 w-full grid gap-4 place-items-center lg:flex">
+      <a href="/" className="max-w-sm sm:max-w-md">
         <img
           src="signdesignnyc-logo-dark.svg"
           alt="SignDesignNYC Logo Dark"
           className="w-fit"
         />
       </a>
-      <ul className="grid grid-cols-2 sm:flex gap-4 flex-wrap justify-center">
+      {/* TODO: Turn products into dropdown */}
+      <ul className="grid grid-cols-2 gap-4 justify-center sm:flex sm:flex-wrap lg:grow lg:justify-end">
         <NavLink href="#awning">Awning</NavLink>
         <NavLink href="#neon">Neon</NavLink>
         <NavLink href="#channel-letters">Channel Letters</NavLink>

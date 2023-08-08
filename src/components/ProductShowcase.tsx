@@ -4,8 +4,10 @@ export default function ProductShowcase(): React.ReactNode {
   return (
     <section className="mt-8 px-4 w-full grid">
       <div className="
-        place-self-center grid gap-6 w-full max-w-sm sm:max-w-lg md:max-w-2xl
+        place-self-center grid gap-6 w-full max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl
       ">
+        {/* TODO: Progressive low-quality images for fast loading */}
+        {/* TODO: Click image to show HD quality */}
         {products.map((product, idx) => (
           <ProductSection id={product.id} key={idx}>
             <h1 className="font-bold text-zinc-100 text-3xl">
