@@ -3,15 +3,49 @@ import type React from "react";
 export default function ProductShowcase(): React.ReactNode {
   return (
     <section className="mt-8 px-4 w-full grid">
-      <div className="place-self-center grid gap-6 w-full max-w-sm sm:max-w-md">
+      <div className="
+        place-self-center grid gap-6 w-full max-w-sm sm:max-w-lg md:max-w-2xl
+      ">
         {products.map(product => (
-          <ProductSection id={product.id} title={product.title}>
-            {product.images.map(image => (
-              <ProductImage
-                src={image.src}
-                alt={image.alt}
-              />
-            ))}
+          <ProductSection id={product.id}>
+            <h1 className="font-bold text-zinc-100 text-3xl">
+              {product.title}
+            </h1>
+            {/* 1 column */}
+            <div className="grid gap-4 md:hidden">
+              {product.images.map(image => (
+                <ProductImage
+                  src={image.src}
+                  alt={image.alt}
+                />
+              ))}
+            </div>
+            {/* 2 column */}
+            <div className="hidden w-full md:flex md:gap-4">
+              {/* First half */}
+              <div className="flex flex-col gap-4 w-1/2">
+                {product.images
+                  .slice(0, Math.floor(product.images.length / 2))
+                  .map(image => (
+                    <ProductImage
+                      src={image.src}
+                      alt={image.alt}
+                    />
+                ))}
+              </div>
+              {/* Second half */}
+              <div className="flex flex-col gap-4 w-1/2">
+                {product.images
+                  .slice(Math.floor(product.images.length / 2))
+                  .map(image => (
+                    <ProductImage
+                      src={image.src}
+                      alt={image.alt}
+                    />
+                  ))
+                }
+              </div>
+            </div>
           </ProductSection>
         ))}
       </div>
@@ -21,21 +55,14 @@ export default function ProductShowcase(): React.ReactNode {
 
 function ProductSection({
   id,
-  title,
   children,
 }: {
   id: string;
-  title: string;
   children?: React.ReactNode;
 }): React.ReactNode {
   return (
     <div id={id} className="grid gap-4 scroll-mt-4">
-      <h1 className="font-bold text-zinc-100 text-3xl">
-        {title}
-      </h1>
-      <div className="grid gap-4">
-        {children}
-      </div>
+      {children}
     </div>
   );
 }
@@ -48,7 +75,11 @@ function ProductImage({
   alt?: string;
 }): React.ReactNode {
   return (
-    <img src={src} alt={alt} className="rounded-lg" />
+    <img
+      src={src}
+      alt={alt}
+      className="rounded-lg object-contain"
+    />
   );
 }
 
