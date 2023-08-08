@@ -2,6 +2,7 @@
 import "../styles/global.css"
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar";
+import CallToAction from "../components/CallToAction";
 import ProductShowcase from "../components/ProductShowcase";
 import Footer from "../components/Footer";
 ---
@@ -9,21 +10,7 @@ import Footer from "../components/Footer";
 <Layout title="SignDesignNYC | Mobile">
   <main class="grid bg-zinc-800">
     <Navbar client:load />
-    <!-- Call to Action -->
-    <section class="mt-8 px-4 w-full grid">
-      <div class="place-self-center grid gap-6 w-full max-w-sm sm:max-w-md">
-        <h1 class="font-bold text-zinc-100 text-4xl">
-          Custom Vinyl Stickers, Awnings, Neon Signs, PVC, and more!
-        </h1>
-        <a
-          href="mailto:signdesignnyc@gmail.com"
-          target="_blank"
-          class="grid place-items-center rounded-full p-2 bg-yellow-400 hover:cursor-pointer"
-        >
-          <span class="font-bold text-zinc-800 text-2xl">Contact for Pricing</span>
-        </a>
-      </div>
-    </section>
+    <CallToAction />
     <ProductShowcase />
     <Footer />
   </main>
