@@ -25,12 +25,14 @@ function SocialLinks(): React.ReactNode {
         icon={Mail}
       />
       <SocialLink
-        href=""
+        href="https://www.facebook.com/calvin.chon.7"
+        target="_blank"
         title="Facebook"
         icon={Facebook}
       />
       <SocialLink
-        href=""
+        href="https://www.instagram.com/signdesignnyc/"
+        target="_blank"
         title="Instagram"
         icon={Instagram}
       />
