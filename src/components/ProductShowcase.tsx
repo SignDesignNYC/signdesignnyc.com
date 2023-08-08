@@ -6,45 +6,19 @@ export default function ProductShowcase(): React.ReactNode {
       <div className="
         place-self-center grid gap-6 w-full max-w-sm sm:max-w-lg md:max-w-2xl
       ">
-        {products.map(product => (
-          <ProductSection id={product.id}>
+        {products.map((product, idx) => (
+          <ProductSection id={product.id} key={idx}>
             <h1 className="font-bold text-zinc-100 text-3xl">
               {product.title}
             </h1>
-            {/* 1 column */}
-            <div className="grid gap-4 md:hidden">
-              {product.images.map(image => (
+            <div className="grid gap-4 md:grid-cols-2 md:grid-flow-dense">
+              {product.images.map((image, idx) => (
                 <ProductImage
                   src={image.src}
                   alt={image.alt}
+                  key={idx}
                 />
               ))}
-            </div>
-            {/* 2 column */}
-            <div className="hidden w-full md:flex md:gap-4">
-              {/* First half */}
-              <div className="flex flex-col gap-4 w-1/2">
-                {product.images
-                  .slice(0, Math.floor(product.images.length / 2))
-                  .map(image => (
-                    <ProductImage
-                      src={image.src}
-                      alt={image.alt}
-                    />
-                ))}
-              </div>
-              {/* Second half */}
-              <div className="flex flex-col gap-4 w-1/2">
-                {product.images
-                  .slice(Math.floor(product.images.length / 2))
-                  .map(image => (
-                    <ProductImage
-                      src={image.src}
-                      alt={image.alt}
-                    />
-                  ))
-                }
-              </div>
             </div>
           </ProductSection>
         ))}
@@ -78,7 +52,7 @@ function ProductImage({
     <img
       src={src}
       alt={alt}
-      className="rounded-lg object-contain"
+      className="rounded-lg md:object-cover md:aspect-square"
     />
   );
 }
