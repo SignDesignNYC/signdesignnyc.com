@@ -4,7 +4,7 @@ import type React from "react";
 export default function Footer(): React.ReactNode {
   return (
     <footer id="contact" className="mt-12 px-4 w-full bg-zinc-900">
-      <div className="my-8 m-auto flex flex-col gap-4 max-w-sm sm:max-w-md">
+      <div className="my-8 m-auto flex flex-col gap-4 max-w-sm sm:max-w-lg md:max-w-2xl">
         <a href="/" className="max-w-xs sm:max-w-sm">
           <img src="signdesignnyc-logo-dark.svg" alt="SignDesignNYC Logo Dark" className="w-fit" />
         </a>
