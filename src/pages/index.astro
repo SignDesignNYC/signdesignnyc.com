@@ -1,9 +1,9 @@
 ---
 import "../styles/global.css"
 import Layout from "../layouts/Layout.astro";
-import { MailIcon, FacebookIcon, InstagramIcon } from "../components/icons";
 import Navbar from "../components/Navbar";
 import ProductShowcase from "../components/ProductShowcase";
+import Footer from "../components/Footer";
 ---
 
 <Layout title="SignDesignNYC | Mobile">
@@ -25,49 +25,6 @@ import ProductShowcase from "../components/ProductShowcase";
       </div>
     </section>
     <ProductShowcase />
-    <!-- Footer Section -->
-    <footer id="contact" class="mt-12 px-4 w-full bg-zinc-900">
-      <div class="my-8 max-w-sm m-auto flex flex-col gap-4">
-        <!-- Logo -->
-        <a href="/" class="max-w-xs">
-          <img src="signdesignnyc-logo-dark.svg" alt="SignDesignNYC Logo Dark" class="w-fit">
-        </a>
-        <!-- Social Links -->
-        <div class="flex -translate-x-2">
-          <a
-            href="mailto:signdesignnyc@gmail.com"
-            target="_blank"
-            title="Email"
-            class="group p-2"
-          >
-            <MailIcon
-              className="w-8 h-8 text-zinc-100 group-hover:text-yellow-300 transition-all duration-150 ease-in-out"
-            />
-          </a>
-          <a
-            href=""
-            title="Facebook"
-            class="group p-2"
-          >
-            <FacebookIcon
-              className="w-8 h-8 text-zinc-100 group-hover:text-yellow-300 transition-all duration-150 ease-in-out"
-            />
-          </a>
-          <a
-            href=""
-            title="Instagram"
-            class="group p-2"
-          >
-            <InstagramIcon
-              className="w-8 h-8 text-zinc-100 group-hover:text-yellow-300 transition-all duration-150 ease-in-out"
-            />
-          </a>
-        </div>
-        <!-- Copyright -->
-        <span class="mt-20 text-zinc-500 text-sm">
-          &copy; 2023 SignDesignNYC, All Rights Reserved
-        </span>
-      </div>
-    </footer>
+    <Footer />
   </main>
 </Layout>
