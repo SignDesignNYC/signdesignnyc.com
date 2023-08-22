@@ -2,10 +2,12 @@ import type React from "react";
 
 export default function ProductShowcase(): React.ReactNode {
   return (
-    <section className="mt-8 px-4 w-full grid">
+    <section id="products" className="mt-8 px-4 w-full grid">
       <div className="
         place-self-center grid gap-6 w-full max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl
       ">
+        <h1 className="font-bold text-4xl text-zinc-100">Products</h1>
+        <ProductList />
         {/* TODO: Progressive low-quality images for fast loading */}
         {/* TODO: Click image to show HD quality */}
         {products.map((product, idx) => (
@@ -26,6 +28,52 @@ export default function ProductShowcase(): React.ReactNode {
         ))}
       </div>
     </section>
+  );
+}
+
+function ProductList(): React.ReactNode {
+  return (
+   <ul className="grid">
+      <ProductListItem title="A-Frame & Stand Sign" />
+      <ProductListItem title="Aluminum Box & Panel Sign" />
+      <ProductListItem title="Backlit Sign" />
+      <ProductListItem title="Banner Sign" />
+      <ProductListItem title="Bus, Truck, Van & Door Lettering" />
+      <ProductListItem title="Cafe Stand & Stand Sign" />
+      <ProductListItem title="Cast Metal Letters" />
+      <ProductListItem title="Channel Letters" />
+      <ProductListItem title="Corrugated Board Sign" />
+      <ProductListItem title="Cut PVC 3D Letters" />
+      <ProductListItem title="Directory Board Sign" />
+      <ProductListItem title="Embossed Letters" />
+      <ProductListItem title="Engraving Wood Sign" />
+      <ProductListItem title="Fabric Awning" />
+      <ProductListItem title="Fabric Flag Sign" />
+      <ProductListItem title="Light Box" />
+      <ProductListItem title="Neon Sign" />
+      <ProductListItem title="Plastic Panel Sign" />
+      <ProductListItem title="PVC Board" />
+      <ProductListItem title="Retractable Awning" />
+      <ProductListItem title="Room Number Sign" />
+      <ProductListItem title="Stand-Off Screws Sign" />
+      <ProductListItem title="Sticker Sign" />
+      <ProductListItem title="Vestibule Panel" />
+      <ProductListItem title="Windmaster Sign" />
+    </ul>
+  );
+}
+
+function ProductListItem({
+  title,
+}: {
+  title: string;
+}): React.ReactNode {
+  return (
+    <li>
+      <button className="w-full h-full hover:bg-zinc-300/20 p-4 border border-zinc-300/20">
+        <span className="font-bold text-zinc-100 text-3xl">{title}</span>
+      </button>
+    </li>
   );
 }
 

@@ -9,8 +9,10 @@ import Footer from "../components/Footer";
 
 <Layout title="SignDesignNYC">
   <main class="grid bg-zinc-800">
-    <Navbar client:load />
-    <CallToAction />
+    <div class="flex flex-col md:h-screen">
+      <Navbar client:load />
+      <CallToAction />
+    </div>
     <ProductShowcase client:visible />
     <Footer />
   </main>

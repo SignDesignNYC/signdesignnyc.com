@@ -13,11 +13,7 @@ export default function Navbar(): React.ReactNode {
         </a>
         {/* TODO: Turn products into dropdown */}
         <ul className="grid grid-cols-2 gap-4 justify-center sm:flex sm:flex-wrap lg:grow lg:justify-end">
-          <NavLink href="#awning">Awning</NavLink>
-          <NavLink href="#neon">Neon</NavLink>
-          <NavLink href="#channel-letters">Channel Letters</NavLink>
-          <NavLink href="#pvc">PVC</NavLink>
-          <NavLink href="#stickers">Vinyl Stickers</NavLink>
+          <NavLink href="#products">Products</NavLink>
           <NavLink href="#contact">Contact</NavLink>
         </ul>
       </div>
