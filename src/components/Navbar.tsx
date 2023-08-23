@@ -3,7 +3,7 @@ import type React from "react";
 export default function Navbar(): React.ReactNode {
   return (
     <nav className="bg-zinc-800 p-4 w-full">
-      <div className="grid gap-4 place-items-center m-auto lg:max-w-6xl">
+      <div className="grid gap-4 place-items-center m-auto lg:max-w-5xl lg:flex">
         <a href="/" className="max-w-sm sm:max-w-md">
           <img
             src="signdesignnyc-logo-dark.svg"

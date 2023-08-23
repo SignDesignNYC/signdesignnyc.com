@@ -4,7 +4,7 @@ export default function ProductShowcase(): React.ReactNode {
   return (
     <section id="products" className="mt-8 px-4 w-full grid">
       <div className="
-        place-self-center grid gap-6 w-full max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl
+        place-self-center grid gap-6 w-full max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-5xl
       ">
         <h1 className="font-bold text-4xl text-zinc-100">Products</h1>
         <ProductList />
