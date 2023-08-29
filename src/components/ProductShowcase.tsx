@@ -13,19 +13,29 @@ export default function ProductShowcase(): React.ReactNode {
         place-self-center grid gap-6 w-full max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-5xl
       ">
         <h1 className="font-bold text-4xl text-zinc-100">Products</h1>
+        {/* TODO: Progressive low-quality images for fast loading */}
+        {/* TODO: Click image to show HD quality */}
         <Accordion type="single" collapsible className="w-full">
           {productList.map((product, idx) => (
             <AccordionItem value={product.id} key={idx} className="border-b-zinc-700">
               <AccordionTrigger className="text-zinc-100 text-xl">{product.title}</AccordionTrigger>
               <AccordionContent className="text-zinc-100">
-                ({product.images.length}) Images of {product.title}
+                <span>({product.images.length}) Images of {product.title}</span>
+                <div className="grid grid-cols-3 gap-2">
+                  {product.images.map((img, idx) => (
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      key={idx}
+                      className="object-cover aspect-square"
+                    />
+                  ))}
+                </div>
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
 
-        {/* TODO: Progressive low-quality images for fast loading */}
-        {/* TODO: Click image to show HD quality */}
         {products.map((product, idx) => (
           <ProductSection id={product.id} key={idx}>
             <h1 className="font-bold text-zinc-100 text-3xl">
@@ -146,7 +156,20 @@ const productList = [
   {
     id: "fabric-awning",
     title: "Fabric Awning",
-    images: [],
+    images: [
+      {
+        src: "awnings/2011-fabric-awning-cornercafe.jpg",
+        alt: "2011 Fabric Awning - Corner Cafe & Grill",
+      },
+      {
+        src: "awnings/2012-fabric-awning-hrblock.jpg",
+        alt: "2012 Fabric Awning - H&R Block",
+      },
+      {
+        src: "awnings/2012-fabric-awning-zerza.jpg",
+        alt: "2012 Fabric Awning - Zerza Mediterranean",
+      },
+    ],
   },
   {
     id: "fabric-flag-sign",
@@ -161,7 +184,24 @@ const productList = [
   {
     id: "neon-sign",
     title: "Neon Sign",
-    images: [],
+    images: [
+      {
+        src: "neons/2013-neon-sign-bar.jpg",
+        alt: "2013 Neon Sign - Dive Bar",
+      },
+      {
+        src: "neons/2014-neon-sign-sprint.jpg",
+        alt: "2014 Neon Sign - Sprint Sound Sessions",
+      },
+      {
+        src: "neons/2016-neon-sign-burger.jpg",
+        alt: "2016 Neon Sign - Burger",
+      },
+      {
+        src: "neons/2017-neon-sign-booth.jpg",
+        alt: "2017 Neon Sign - Booth",
+      },
+    ],
   },
   {
     id: "plastic-panel-sign",
