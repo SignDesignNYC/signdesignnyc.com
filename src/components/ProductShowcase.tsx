@@ -5,6 +5,14 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export default function ProductShowcase(): React.ReactNode {
   return (
@@ -23,12 +31,24 @@ export default function ProductShowcase(): React.ReactNode {
                 <span>({product.images.length}) Images of {product.title}</span>
                 <div className="grid grid-cols-3 gap-2">
                   {product.images.map((img, idx) => (
-                    <img
-                      src={img.src}
-                      alt={img.alt}
-                      key={idx}
-                      className="object-cover aspect-square"
-                    />
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <img
+                          src={img.src}
+                          alt={img.alt}
+                          key={idx}
+                          className="relative object-cover aspect-square hover:cursor-pointer"
+                        />
+                      </DialogTrigger>
+                      <DialogContent className="max-w-6xl bg-zinc-800 border-zinc-700">
+                        <img
+                          src={img.src}
+                          alt={img.alt}
+                          key={idx}
+                          className="w-full h-full"
+                        />
+                      </DialogContent>
+                    </Dialog>
                   ))}
                 </div>
               </AccordionContent>
