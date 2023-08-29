@@ -29,7 +29,7 @@ export default function ProductShowcase(): React.ReactNode {
               <AccordionTrigger className="text-zinc-100 text-xl">{product.title}</AccordionTrigger>
               <AccordionContent className="text-zinc-100">
                 <span>({product.images.length}) Images of {product.title}</span>
-                <div className="grid grid-cols-3 gap-2">
+                <div className="grid grid-cols-3 gap-0.5">
                   {product.images.map((img, idx) => (
                     <Dialog>
                       <DialogTrigger asChild>
