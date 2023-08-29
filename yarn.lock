@@ -1589,6 +1589,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"class-variance-authority@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "class-variance-authority@npm:0.7.0"
+  dependencies:
+    clsx: 2.0.0
+  checksum: e7fd1fab433ef06f52a1b7b241b70b4a185864deef199d3b0a2c3412f1cc179517288264c383f3b971a00d76811625fc8f7ffe709e6170219e88cd7368f08a20
+  languageName: node
+  linkType: hard
+
 "clean-stack@npm:^2.0.0":
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
@@ -1623,6 +1632,13 @@ __metadata:
   version: 1.0.4
   resolution: "clone@npm:1.0.4"
   checksum: d06418b7335897209e77bdd430d04f882189582e67bd1f75a04565f3f07f5b3f119a9d670c943b6697d0afb100f03b866b3b8a1f91d4d02d72c4ecf2bb64b5dd
+  languageName: node
+  linkType: hard
+
+"clsx@npm:2.0.0, clsx@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "clsx@npm:2.0.0"
+  checksum: a2cfb2351b254611acf92faa0daf15220f4cd648bdf96ce369d729813b85336993871a4bf6978ddea2b81b5a130478339c20d9d0b5c6fc287e5147f0c059276e
   languageName: node
   linkType: hard
 
@@ -3076,12 +3092,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.264.0":
-  version: 0.264.0
-  resolution: "lucide-react@npm:0.264.0"
+"lucide-react@npm:^0.271.0":
+  version: 0.271.0
+  resolution: "lucide-react@npm:0.271.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0
-  checksum: 8cd524b03beb849a7d9a2a9b4b71d9bf4b0e53bb15019d2ef7351896e89901b0ee1c1bd5f67d382fc77b3842a44f5b13de464c0b90bd21222ac0c68c66044ef9
+  checksum: 56eede2a266ed8fb8118c5c297fdebaafc39c4d4c44360c8582dff07cdf6e6dffc0ea0d837ba6aececea2c56dfde2620ef8034730c080eb98c29f5e48d185ada
   languageName: node
   linkType: hard
 
@@ -4749,10 +4765,14 @@ __metadata:
     "@types/react": ^18.0.21
     "@types/react-dom": ^18.0.6
     astro: ^2.9.5
-    lucide-react: ^0.264.0
+    class-variance-authority: ^0.7.0
+    clsx: ^2.0.0
+    lucide-react: ^0.271.0
     react: ^18.0.0
     react-dom: ^18.0.0
+    tailwind-merge: ^1.14.0
     tailwindcss: ^3.0.24
+    tailwindcss-animate: ^1.0.7
   languageName: unknown
   linkType: soft
 
@@ -4990,6 +5010,22 @@ __metadata:
     "@pkgr/utils": ^2.3.1
     tslib: ^2.5.0
   checksum: 8a9560e5d8f3d94dc3cf5f7b9c83490ffa30d320093560a37b88f59483040771fd1750e76b9939abfbb1b5a23fd6dfbae77f6b338abffe7cae7329cd9b9bb86b
+  languageName: node
+  linkType: hard
+
+"tailwind-merge@npm:^1.14.0":
+  version: 1.14.0
+  resolution: "tailwind-merge@npm:1.14.0"
+  checksum: 8cf5d37f51b3b32e4bdd5544feaed34357bfba2f64f14834cc4a21ac29b0ae22d7255386467a0f1dadb3e38499389efbbabeddcd0b16571af5a0d346a4921877
+  languageName: node
+  linkType: hard
+
+"tailwindcss-animate@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "tailwindcss-animate@npm:1.0.7"
+  peerDependencies:
+    tailwindcss: "*"
+  checksum: c1760983eb3fec0c8421e95082bf308e6845df43e2f90862386366e82545c801b26b4d189c4cd23d6915252b76d18005c8e5f591f8b119944c7fb8650d0f8bce
   languageName: node
   linkType: hard
 
