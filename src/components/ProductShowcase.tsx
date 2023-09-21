@@ -226,7 +226,56 @@ const productList = [
   {
     id: "banner-sign",
     title: "Banner Sign",
-    images: [],
+    images: [
+      {
+        src: "banner/2008-banner-retail-space-winck-realty.jpg",
+        alt: ""
+      },
+      {
+        src: "banner/2008-banner-retail-space-zelnik.jpg",
+        alt: ""
+      },
+      {
+        src: "banner/2009-banner-retail-space-lansco.jpg",
+        alt: ""
+      },
+      {
+        src: "banner/2013-banner-american-apparel.jpg",
+        alt: ""
+      },
+      {
+        src: "banner/2013-banner-american-apparel-alt.jpg",
+        alt: ""
+      },
+      {
+        src: "banner/2014-banner-black-bear-bar.jpg",
+        alt: ""
+      },
+      {
+        src: "banner/2015-banner-med.jpg",
+        alt: ""
+      },
+      {
+        src: "banner/2015-banner-year-end-dinner.jpg",
+        alt: ""
+      },
+      {
+        src: "banner/2016-banner-martial-arts.jpg",
+        alt: ""
+      },
+      {
+        src: "banner/2019-banner-smoke-convenience.jpg",
+        alt: ""
+      },
+      {
+        src: "banner/2020-banner-tours.jpg",
+        alt: ""
+      },
+      {
+        src: "banner/2022-banner-for-rent-raber-enterprises.jpg",
+        alt: ""
+      },
+    ],
   },
   {
     id: "bus-truck-van-door-lettering",
