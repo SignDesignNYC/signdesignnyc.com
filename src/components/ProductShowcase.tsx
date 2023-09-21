@@ -278,15 +278,15 @@ const productList = [
     title: "Fabric Awning",
     images: [
       {
-        src: "awnings/2011-fabric-awning-cornercafe.jpg",
+        src: "fabric-awnings/2011-fabric-awning-cornercafe.jpg",
         alt: "2011 Fabric Awning - Corner Cafe & Grill",
       },
       {
-        src: "awnings/2012-fabric-awning-hrblock.jpg",
+        src: "fabric-awnings/2012-fabric-awning-hrblock.jpg",
         alt: "2012 Fabric Awning - H&R Block",
       },
       {
-        src: "awnings/2012-fabric-awning-zerza.jpg",
+        src: "fabric-awnings/2012-fabric-awning-zerza.jpg",
         alt: "2012 Fabric Awning - Zerza Mediterranean",
       },
     ],
