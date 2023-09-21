@@ -29,7 +29,7 @@ export default function ProductShowcase(): React.ReactNode {
               <AccordionTrigger className="text-zinc-100 text-xl">{product.title}</AccordionTrigger>
               <AccordionContent className="text-zinc-100">
                 <span>({product.images.length}) Images of {product.title}</span>
-                <div className="grid grid-cols-3 gap-0.5">
+                <div className="grid grid-cols-3 gap-0.5 mt-4">
                   {product.images.map((img, idx) => (
                     <Dialog>
                       <DialogTrigger asChild>
@@ -40,12 +40,12 @@ export default function ProductShowcase(): React.ReactNode {
                           className="relative object-cover aspect-square hover:cursor-pointer"
                         />
                       </DialogTrigger>
-                      <DialogContent className="max-w-6xl bg-zinc-800 border-zinc-700">
+                      <DialogContent className="max-h-screen max-w-6xl bg-zinc-800 border-zinc-700 grid place-items-center overflow-y-auto">
                         <img
                           src={img.src}
                           alt={img.alt}
                           key={idx}
-                          className="w-full h-full"
+                          className="w-fit h-fit"
                         />
                       </DialogContent>
                     </Dialog>
