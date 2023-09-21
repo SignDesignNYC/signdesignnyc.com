@@ -172,7 +172,56 @@ const productList = [
   {
     id: "backlit-sign",
     title: "Backlit Sign",
-    images: [],
+    images: [
+      {
+        src: "backlit/2010-pvc-3d-backlit-letters-taisho.jpg",
+        alt: ""
+      },
+      {
+        src: "backlit/2011-pvc-3d-backlit-letters-blue.jpg",
+        alt: ""
+      },
+      {
+        src: "backlit/2011-pvc-3d-backlit-letters-luna-ristorante.jpg",
+        alt: ""
+      },
+      {
+        src: "backlit/2011-pvc-3d-backlit-letters-with-box-mahjong-dumplings.jpg",
+        alt: ""
+      },
+      {
+        src: "backlit/2011-pvc-3d-backlit-letters-with-box-salon.jpg",
+        alt: ""
+      },
+      {
+        src: "backlit/2011-pvc-3d-backlit-letters-with-box-yakitori-bar.jpg",
+        alt: ""
+      },
+      {
+        src: "backlit/2012-pvc-3d-backlit-letters-with-box-optical.jpg",
+        alt: ""
+      },
+      {
+        src: "backlit/2012-pvc-3d-backlit-letters-with-box-sushi.jpg",
+        alt: ""
+      },
+      {
+        src: "backlit/2014-pvc-3d-backlit-letters-with-box-next-door-restaurant.jpg",
+        alt: ""
+      },
+      {
+        src: "backlit/2017-pvc-3d-backlit-letters-with-box-beyond.jpg",
+        alt: ""
+      },
+      {
+        src: "backlit/2019-pvc-3d-backlit-letters-with-box-allora.jpg",
+        alt: ""
+      },
+      {
+        src: "backlit/2020-pvc-3d-backlit-letters-with-box-psychic-readings.jpg",
+        alt: ""
+      },
+    ],
   },
   {
     id: "banner-sign",
