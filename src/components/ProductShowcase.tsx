@@ -111,7 +111,56 @@ const productList = [
   {
     id: "a-frame-stand-sign",
     title: "A-Frame & Stand Sign",
-    images: [],
+    images: [
+      {
+        src: "a-frame-stand/2011-stand-juicebar.jpg",
+        alt: ""
+      },
+      {
+        src: "a-frame-stand/2011-stand-juicebar2.jpg",
+        alt: ""
+      },
+      {
+        src: "a-frame-stand/2011-stand-psychic-readings.jpg",
+        alt: ""
+      },
+      {
+        src: "a-frame-stand/2013-a-frame-monocle-order.jpg",
+        alt: ""
+      },
+      {
+        src: "a-frame-stand/2014-a-frame-hair-service.jpg",
+        alt: ""
+      },
+      {
+        src: "a-frame-stand/2014-a-frame-kiwa-salon.jpg",
+        alt: ""
+      },
+      {
+        src: "a-frame-stand/2015-a-frame-bagels.jpg",
+        alt: ""
+      },
+      {
+        src: "a-frame-stand/2016-a-frame-sports-center.jpg",
+        alt: ""
+      },
+      {
+        src: "a-frame-stand/2018-stand-yonekichi.jpg",
+        alt: ""
+      },
+      {
+        src: "a-frame-stand/2019-a-frame-parking.jpg",
+        alt: ""
+      },
+      {
+        src: "a-frame-stand/2020-a-frame-nomaste-psychic.jpg",
+        alt: ""
+      },
+      {
+        src: "a-frame-stand/2020-stand-restaurant.jpg",
+        alt: ""
+      },
+    ],
   },
   {
     id: "aluminum-box-panel-sign",
