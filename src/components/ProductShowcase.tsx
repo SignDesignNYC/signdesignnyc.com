@@ -118,7 +118,56 @@ const productList = [
   {
     id: "aluminum-box-panel-sign",
     title: "Aluminum Box & Panel Sign",
-    images: [],
+    images: [
+      {
+        src: "aluminum-box-panel/2005-2010-aluminum-box-golden-krust.jpg",
+        alt: ""
+      },
+      {
+        src: "aluminum-box-panel/2012-aluminum-box-chzh.jpg",
+        alt: ""
+      },
+      {
+        src: "aluminum-box-panel/2012-aluminum-box-foragers-city.jpg",
+        alt: ""
+      },
+      {
+        src: "aluminum-box-panel/2012-aluminum-box-foragers-city-back.jpg",
+        alt: ""
+      },
+      {
+        src: "aluminum-box-panel/2012-aluminum-panel-keratin-treatment.jpg",
+        alt: ""
+      },
+      {
+        src: "aluminum-box-panel/2013-aluminum-box-curry.jpg",
+        alt: ""
+      },
+      {
+        src: "aluminum-box-panel/2013-aluminum-box-roasted-meat.jpg",
+        alt: ""
+      },
+      {
+        src: "aluminum-box-panel/2013-aluminum-box-stanley-pharmacy.jpg",
+        alt: ""
+      },
+      {
+        src: "aluminum-box-panel/2013-aluminum-panel-used-cars.jpg",
+        alt: ""
+      },
+      {
+        src: "aluminum-box-panel/2013-double-sided-aluminum-panel-apparel.jpg",
+        alt: ""
+      },
+      {
+        src: "aluminum-box-panel/2017-aluminum-panel-upholstery.jpg",
+        alt: ""
+      },
+      {
+        src: "aluminum-box-panel/2019-aluminum-box-picnic.jpg",
+        alt: ""
+      },
+    ],
   },
   {
     id: "backlit-sign",
