@@ -52,6 +52,7 @@ export default function ProductShowcase({
                           src={img.src}
                           alt={img.alt}
                           key={idx}
+                          loading="lazy"
                           className="relative object-cover aspect-square hover:cursor-pointer"
                         />
                       </DialogTrigger>
