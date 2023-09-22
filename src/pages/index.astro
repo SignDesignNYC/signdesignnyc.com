@@ -30,7 +30,7 @@ const engravingWoodImgs = await Astro.glob("/public/engraving-wood/*").then(mapI
 const fabricAwningsImgs = await Astro.glob("/public/fabric-awnings/*").then(mapImageFilePaths);
 const fabricFlagImgs = await Astro.glob("/public/fabric-flag/*").then(mapImageFilePaths);
 const lightBoxImgs = await Astro.glob("/public/light-box/*").then(mapImageFilePaths);
-// const neonsImgs = await Astro.glob("/public/neons/*").then(mapImageFilePaths);
+const neonsImgs = await Astro.glob("/public/neons/*").then(mapImageFilePaths);
 // const plasticPanelImgs = await Astro.glob("/public/plastic-panel/*").then(mapImageFilePaths);
 // const pvcImgs = await Astro.glob("/public/pvc/*").then(mapImageFilePaths);
 // const retractableAwningImgs = await Astro.glob("/public/retractable-awning/*").then(mapImageFilePaths);
@@ -124,8 +124,7 @@ const products = [
   {
     id: "neon-sign",
     title: "Neon Sign",
-    // images: neonsImgs.map(mapImageSourceToView),
-    images: [],
+    images: neonsImgs.map(mapImageSourceToView),
   },
   {
     id: "plastic-panel-sign",
