@@ -3,7 +3,7 @@ import type React from "react";
 export default function Navbar(): React.ReactNode {
   return (
     <nav className="bg-zinc-800 p-4 w-full">
-      <div className="grid gap-4 place-items-center m-auto lg:max-w-6xl">
+      <div className="grid gap-4 place-items-center m-auto lg:max-w-5xl lg:flex">
         <a href="/" className="max-w-sm sm:max-w-md">
           <img
             src="signdesignnyc-logo-dark.svg"
@@ -13,11 +13,7 @@ export default function Navbar(): React.ReactNode {
         </a>
         {/* TODO: Turn products into dropdown */}
         <ul className="grid grid-cols-2 gap-4 justify-center sm:flex sm:flex-wrap lg:grow lg:justify-end">
-          <NavLink href="#awning">Awning</NavLink>
-          <NavLink href="#neon">Neon</NavLink>
-          <NavLink href="#channel-letters">Channel Letters</NavLink>
-          <NavLink href="#pvc">PVC</NavLink>
-          <NavLink href="#stickers">Vinyl Stickers</NavLink>
+          <NavLink href="#products">Products</NavLink>
           <NavLink href="#contact">Contact</NavLink>
         </ul>
       </div>
