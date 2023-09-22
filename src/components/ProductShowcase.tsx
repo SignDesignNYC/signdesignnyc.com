@@ -27,7 +27,7 @@ export default function ProductShowcase({
   }[];
 }): React.ReactNode {
   return (
-    <section id="products" className="mt-8 px-4 w-full grid">
+    <section id="products" className="mt-16 px-4 w-full grid">
       <div className="
         place-self-center grid gap-6 w-full max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-5xl
       ">
@@ -39,8 +39,8 @@ export default function ProductShowcase({
             <AccordionItem value={product.id} key={idx} className="border-b-zinc-700">
               <AccordionTrigger className="text-zinc-100 text-xl">
                 <div className="flex w-full justify-between place-items-center mr-2">
-                  <span>{product.title}</span>
-                  <span className="text-sm font-normal">{product.images.length} images</span>
+                  <span className="text-base text-left sm:text-lg md:text-xl">{product.title}</span>
+                  <span className="font-normal text-xs sm:text-sm">{product.images.length} images</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="text-zinc-100">
