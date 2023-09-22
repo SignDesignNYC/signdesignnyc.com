@@ -21,7 +21,7 @@ const bannerImgs = await Astro.glob("/public/banner/*").then(mapImageFilePaths);
 const busTruckVanDoorLetteringImgs = await Astro.glob("/public/bus-truck-van-door-lettering/*").then(mapImageFilePaths);
 const cafeStandImgs = await Astro.glob("/public/cafe-stand/*").then(mapImageFilePaths);
 const castMetalLettersImgs = await Astro.glob("/public/cast-metal-letters/*").then(mapImageFilePaths);
-// const channelLettersImgs = await Astro.glob("/public/channel-letters/*").then(mapImageFilePaths);
+const channelLettersImgs = await Astro.glob("/public/channel-letters/*").then(mapImageFilePaths);
 // const corrugatedBoardImgs = await Astro.glob("/public/corrugated-board/*").then(mapImageFilePaths);
 // const cutPVC3DImgs = await Astro.glob("/public/cut-pvc-3d/*").then(mapImageFilePaths);
 // const directoryBoardImgs = await Astro.glob("/public/directory-board/*").then(mapImageFilePaths);
@@ -79,8 +79,7 @@ const products = [
   {
     id: "channel-letters",
     title: "Channel Letters",
-    // images: channelLettersImgs.map(mapImageSourceToView),
-    images: [],
+    images: channelLettersImgs.map(mapImageSourceToView),
   },
   {
     id: "corrugated-board-sign",
