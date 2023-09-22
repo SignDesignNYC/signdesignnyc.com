@@ -18,8 +18,8 @@ const aFrameStandImgs = await Astro.glob("/public/a-frame-stand/*").then(mapImag
 const aluminumBoxPanelImgs = await Astro.glob("/public/aluminum-box-panel/*").then(mapImageFilePaths);
 const backlitImgs = await Astro.glob("/public/backlit/*").then(mapImageFilePaths);
 const bannerImgs = await Astro.glob("/public/banner/*").then(mapImageFilePaths);
-// const busTruckVanDoorLetteringImgs = await Astro.glob("/public/bus-truck-van-door-lettering/*").then(mapImageFilePaths);
-// const cafeStandImgs = await Astro.glob("/public/cafe-stand/*").then(mapImageFilePaths);
+const busTruckVanDoorLetteringImgs = await Astro.glob("/public/bus-truck-van-door-lettering/*").then(mapImageFilePaths);
+const cafeStandImgs = await Astro.glob("/public/cafe-stand/*").then(mapImageFilePaths);
 // const castMetalLettersImgs = await Astro.glob("/public/cast-metal-letters/*").then(mapImageFilePaths);
 // const channelLettersImgs = await Astro.glob("/public/channel-letters/*").then(mapImageFilePaths);
 // const corrugatedBoardImgs = await Astro.glob("/public/corrugated-board/*").then(mapImageFilePaths);
@@ -64,14 +64,12 @@ const products = [
   {
     id: "bus-truck-van-door-lettering",
     title: "Bus, Truck, Van & Door Lettering",
-    // images: busTruckVanDoorLetteringImgs.map(mapImageSourceToView),
-    images: [],
+    images: busTruckVanDoorLetteringImgs.map(mapImageSourceToView),
   },
   {
     id: "cafe-stand-sign",
     title: "Cafe Stand & Stand Sign",
-    // images: cafeStandImgs.map(mapImageSourceToView),
-    images: [],
+    images: cafeStandImgs.map(mapImageSourceToView),
   },
   {
     id: "cast-metal-letters",
