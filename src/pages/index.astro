@@ -33,7 +33,7 @@ const lightBoxImgs = await Astro.glob("/public/light-box/*").then(mapImageFilePa
 const neonsImgs = await Astro.glob("/public/neons/*").then(mapImageFilePaths);
 const plasticPanelImgs = await Astro.glob("/public/plastic-panel/*").then(mapImageFilePaths);
 const pvcImgs = await Astro.glob("/public/pvc/*").then(mapImageFilePaths);
-// const retractableAwningImgs = await Astro.glob("/public/retractable-awning/*").then(mapImageFilePaths);
+const retractableAwningImgs = await Astro.glob("/public/retractable-awning/*").then(mapImageFilePaths);
 // const roomNumberImgs = await Astro.glob("/public/room-number/*").then(mapImageFilePaths);
 // const standOffScrewsImgs = await Astro.glob("/public/stand-off-screws/*").then(mapImageFilePaths);
 // const stickersImgs = await Astro.glob("/public/stickers/*").then(mapImageFilePaths);
@@ -139,8 +139,7 @@ const products = [
   {
     id: "retractable-awning",
     title: "Retractable Awning",
-    // images: retractableAwningImgs.map(mapImageSourceToView),
-    images: [],
+    images: retractableAwningImgs.map(mapImageSourceToView),
   },
   {
     id: "room-number-sign",
