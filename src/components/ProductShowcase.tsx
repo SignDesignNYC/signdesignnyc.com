@@ -37,10 +37,14 @@ export default function ProductShowcase({
         <Accordion type="single" collapsible className="w-full">
           {productList.map((product, idx) => (
             <AccordionItem value={product.id} key={idx} className="border-b-zinc-700">
-              <AccordionTrigger className="text-zinc-100 text-xl">{product.title}</AccordionTrigger>
+              <AccordionTrigger className="text-zinc-100 text-xl">
+                <div className="flex w-full justify-between place-items-center mr-2">
+                  <span>{product.title}</span>
+                  <span className="text-sm font-normal">{product.images.length} images</span>
+                </div>
+              </AccordionTrigger>
               <AccordionContent className="text-zinc-100">
-                <span>({product.images.length}) Images of {product.title}</span>
-                <div className="grid grid-cols-3 gap-0.5 mt-4">
+                <div className="grid grid-cols-3 gap-0.5">
                   {product.images.map((img, idx) => (
                     <Dialog>
                       <DialogTrigger asChild>
