@@ -35,7 +35,7 @@ const plasticPanelImgs = await Astro.glob("/public/plastic-panel/*").then(mapIma
 const pvcImgs = await Astro.glob("/public/pvc/*").then(mapImageFilePaths);
 const retractableAwningImgs = await Astro.glob("/public/retractable-awning/*").then(mapImageFilePaths);
 const roomNumberImgs = await Astro.glob("/public/room-number/*").then(mapImageFilePaths);
-// const standOffScrewsImgs = await Astro.glob("/public/stand-off-screws/*").then(mapImageFilePaths);
+const standOffScrewsImgs = await Astro.glob("/public/stand-off-screws/*").then(mapImageFilePaths);
 // const stickersImgs = await Astro.glob("/public/stickers/*").then(mapImageFilePaths);
 // const vestibulePanelImgs = await Astro.glob("/public/vestibule-panel/*").then(mapImageFilePaths);
 // const windmasterImgs = await Astro.glob("/public/windmaster/*").then(mapImageFilePaths);
@@ -149,8 +149,7 @@ const products = [
   {
     id: "stand-off-screws-sign",
     title: "Stand-Off Screws Sign",
-    // images: standOffScrewsImgs.map(mapImageSourceToView),
-    images: [],
+    images: standOffScrewsImgs.map(mapImageSourceToView),
   },
   {
     id: "sticker-sign",
