@@ -20,7 +20,7 @@ const backlitImgs = await Astro.glob("/public/backlit/*").then(mapImageFilePaths
 const bannerImgs = await Astro.glob("/public/banner/*").then(mapImageFilePaths);
 const busTruckVanDoorLetteringImgs = await Astro.glob("/public/bus-truck-van-door-lettering/*").then(mapImageFilePaths);
 const cafeStandImgs = await Astro.glob("/public/cafe-stand/*").then(mapImageFilePaths);
-// const castMetalLettersImgs = await Astro.glob("/public/cast-metal-letters/*").then(mapImageFilePaths);
+const castMetalLettersImgs = await Astro.glob("/public/cast-metal-letters/*").then(mapImageFilePaths);
 // const channelLettersImgs = await Astro.glob("/public/channel-letters/*").then(mapImageFilePaths);
 // const corrugatedBoardImgs = await Astro.glob("/public/corrugated-board/*").then(mapImageFilePaths);
 // const cutPVC3DImgs = await Astro.glob("/public/cut-pvc-3d/*").then(mapImageFilePaths);
@@ -74,8 +74,7 @@ const products = [
   {
     id: "cast-metal-letters",
     title: "Cast Metal Letters",
-    // images: castMetalLettersImgs.map(mapImageSourceToView),
-    images: [],
+    images: castMetalLettersImgs.map(mapImageSourceToView),
   },
   {
     id: "channel-letters",
