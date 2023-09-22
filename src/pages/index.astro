@@ -32,7 +32,7 @@ const fabricFlagImgs = await Astro.glob("/public/fabric-flag/*").then(mapImageFi
 const lightBoxImgs = await Astro.glob("/public/light-box/*").then(mapImageFilePaths);
 const neonsImgs = await Astro.glob("/public/neons/*").then(mapImageFilePaths);
 const plasticPanelImgs = await Astro.glob("/public/plastic-panel/*").then(mapImageFilePaths);
-// const pvcImgs = await Astro.glob("/public/pvc/*").then(mapImageFilePaths);
+const pvcImgs = await Astro.glob("/public/pvc/*").then(mapImageFilePaths);
 // const retractableAwningImgs = await Astro.glob("/public/retractable-awning/*").then(mapImageFilePaths);
 // const roomNumberImgs = await Astro.glob("/public/room-number/*").then(mapImageFilePaths);
 // const standOffScrewsImgs = await Astro.glob("/public/stand-off-screws/*").then(mapImageFilePaths);
@@ -134,8 +134,7 @@ const products = [
   {
     id: "pvc-board",
     title: "PVC Board",
-    // images: pvcImgs.map(mapImageSourceToView),
-    images: [],
+    images: pvcImgs.map(mapImageSourceToView),
   },
   {
     id: "retractable-awning",
