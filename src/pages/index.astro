@@ -26,7 +26,7 @@ const corrugatedBoardImgs = await Astro.glob("/public/corrugated-board/*").then(
 const cutPVC3DImgs = await Astro.glob("/public/cut-pvc-3d/*").then(mapImageFilePaths);
 const directoryBoardImgs = await Astro.glob("/public/directory-board/*").then(mapImageFilePaths);
 const embossedLettersImgs = await Astro.glob("/public/embossed-letters/*").then(mapImageFilePaths);
-// const engravingWoodImgs = await Astro.glob("/public/engraving-wood/*").then(mapImageFilePaths);
+const engravingWoodImgs = await Astro.glob("/public/engraving-wood/*").then(mapImageFilePaths);
 // const fabricAwningsImgs = await Astro.glob("/public/fabric-awnings/*").then(mapImageFilePaths);
 // const fabricFlagImgs = await Astro.glob("/public/fabric-flag/*").then(mapImageFilePaths);
 // const lightBoxImgs = await Astro.glob("/public/light-box/*").then(mapImageFilePaths);
@@ -104,8 +104,7 @@ const products = [
   {
     id: "engraving-wood-sign",
     title: "Engraving Wood Sign",
-    // images: engravingWoodImgs.map(mapImageSourceToView),
-    images: [],
+    images: engravingWoodImgs.map(mapImageSourceToView),
   },
   {
     id: "fabric-awning",
