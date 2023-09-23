@@ -25,7 +25,6 @@ const channelLettersImgs = await Astro.glob("/public/channel-letters/*").then(ma
 const corrugatedBoardImgs = await Astro.glob("/public/corrugated-board/*").then(mapImageFilePaths);
 const cutPVC3DImgs = await Astro.glob("/public/cut-pvc-3d/*").then(mapImageFilePaths);
 const directoryBoardImgs = await Astro.glob("/public/directory-board/*").then(mapImageFilePaths);
-const embossedLettersImgs = await Astro.glob("/public/embossed-letters/*").then(mapImageFilePaths);
 const engravingWoodImgs = await Astro.glob("/public/engraving-wood/*").then(mapImageFilePaths);
 const fabricAwningsImgs = await Astro.glob("/public/fabric-awnings/*").then(mapImageFilePaths);
 const fabricFlagImgs = await Astro.glob("/public/fabric-flag/*").then(mapImageFilePaths);
@@ -95,11 +94,6 @@ const products = [
     id: "directory-board-sign",
     title: "Directory Board Sign",
     images: directoryBoardImgs.map(mapImageSourceToView),
-  },
-  {
-    id: "embossed-letters",
-    title: "Embossed Letters",
-    images: embossedLettersImgs.map(mapImageSourceToView),
   },
   {
     id: "engraving-wood-sign",
